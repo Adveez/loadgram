@@ -48,3 +48,9 @@ UDP load balancer written in node.js.
 	]	
 }
 ```
+
+## License
+
+Copyright (c) 2015 Adveez
+
+This software is under the MIT license, see the license document in this repository for more information.
