@@ -1,0 +1,32 @@
+{
+  "name": "loadgram",
+  "version": "0.0.0",
+  "description": "UDP load balancer",
+  "main": "index.js",
+  "bin": {
+    "loadgram": "loadgram.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "figc": "^0.0.3",
+    "roundround": "^0.2.0",
+    "superconsole": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.adveez.com:softwareteam/loadgram.git"
+  },
+  "keywords": [
+    "udp",
+    "load",
+    "balancer"
+  ],
+  "author": "Adveez Team",
+  "license": "MIT"
+}
