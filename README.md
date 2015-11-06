@@ -7,9 +7,9 @@ UDP load balancer written in node.js.
 - Round robin load balancing strategy
 - Health check of the attached backend servers
 - Configurable timeout
-- A Web UI to report on the important metrics (Missing)
-- A HTTP JSON API to report on the important metrics (Missing)
-- Use a backend server as backup (Missing)
+- A Web UI to report on the important metrics
+- A HTTP JSON API to report on the important metrics
+- Use a backend server as backup
 
 ## Configuration
 
