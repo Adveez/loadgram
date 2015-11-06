@@ -10,9 +10,13 @@
     "test": "test"
   },
   "dependencies": {
+    "compression": "^1.6.0",
+    "express": "^4.13.3",
     "figc": "^0.0.3",
+    "nunjucks": "^2.1.0",
     "roundround": "^0.2.0",
-    "superconsole": "^0.1.1"
+    "superconsole": "^0.1.1",
+    "ws": "^0.8.0"
   },
   "devDependencies": {},
   "scripts": {

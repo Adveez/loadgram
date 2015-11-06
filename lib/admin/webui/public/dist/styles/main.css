@@ -1,0 +1,33 @@
+tr.error {
+	background-color: #D44D5C;
+	color : #fff;
+}
+
+tr.success {
+	background-color: #7FB069;
+	color : #fff;
+}
+
+h1, h2 {
+	color : #0B0014;
+}
+
+body {
+	background-color: #F4F4F4;
+	color: #0B0014;
+}
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+th {
+	background-color: #364652;
+	color : #fff;
+}

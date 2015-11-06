@@ -9,6 +9,7 @@ var superconsole = require('superconsole');
 var lib = require('./../index');
 var Loadgram = lib.Loadgram;
 var Reporter = lib.Reporter;
+var AdminApp = lib.AdminApp;
 
 /**
  * Print out error when uncaught exception happens
@@ -67,8 +68,11 @@ config.frontends.forEach(function (frontend) {
 	lb.bind();
 });
 
-setInterval(function () {
-	reporters.map(function (report) {
-		console.log(report.getMetrics());
+if (config.admin.webui || config.admin.api) {
+	console.log('Admin application about to start with configuration: ', config.admin);
+	var app = new AdminApp(config.admin, reporters);
+	app.on('listening', function () {
+		console.log('Admin application is running on port ', app.port);
 	});
-}, 2000);
+	app.run();
+}
