@@ -30,7 +30,7 @@ superconsole({
   callsite : true,
   level : true,
   timestamp : true,
-  logLevel : config.logLevel,
+  logLevel : config.global.loglevel,
   colors : true
 });
 

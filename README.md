@@ -16,20 +16,21 @@ UDP load balancer written in node.js.
 ```json
 {
 	"global" : {
-		"loglevel" : "debug" 
+		"loglevel" : "info" 
 	},
 	"admin" : {
 		"port" : 4000,
 		"webui" : true,
-		"api" : true
+		"api" : true,
+		"refreshInterval" : 2000
 	},
 	"frontends" : [
 		{	
-			"port" : "3535",
+			"port" : 3535,
 			"strategy" : "roundrobin",
 			"healthcheck" : {
 				"enabled" : true,
-				"interval" : 5000,
+				"interval" : 10000,
 				"retries" : 3,
 				"packet" : {
 					"message" : "01",
@@ -39,9 +40,15 @@ UDP load balancer written in node.js.
 			"backends" : [
 				{
 					"host" : "localhost",
-					"port" : "4000",
+					"port" : 4000,
 					"backup" : false,
-					"timeout" : 2000
+					"timeout" : 5000
+				},
+				{
+					"host" : "localhost",
+					"port" : 4010,
+					"backup" : false,
+					"timeout" : 5000
 				}
 			]
 		}
