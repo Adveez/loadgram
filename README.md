@@ -2,6 +2,8 @@
 
 UDP load balancer written in node.js.
 
+![](https://img.shields.io/badge/coverage-48%-orange.svg)
+
 ## Notice
 
 This project is under development and should not be consider production ready. Early adopters and contributors are obviously welcome.
