@@ -2,6 +2,10 @@
 
 UDP load balancer written in node.js.
 
+## Notice
+
+This project is under development and should not be consider production ready. Early adopters and contributors are obviously welcome.
+
 ## Features
 
 - Round robin load balancing strategy
@@ -55,6 +59,29 @@ UDP load balancer written in node.js.
 	]	
 }
 ```
+
+## Run test
+
+Requirements:
+
+- development dependencies installed i.e `npm install`
+
+```
+npm test
+```
+
+## Run test coverage
+
+Requirements:
+
+- development dependencies installed i.e `npm install`
+- jscoverage utility installed (https://github.com/tj/node-jscoverage) 
+
+```
+npm run test-cov
+```
+
+Open coverage.html in your browser to see the result
 
 ## License
 
