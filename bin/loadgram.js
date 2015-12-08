@@ -4,7 +4,7 @@
  */
 
 var figc = require('figc');
-var config = figc(__dirname + '/config.json');
+var config = figc(process.env.LOADGRAM_CONFIG_PATH || (__dirname + '/config.json'));
 var superconsole = require('superconsole');
 var lib = require('./../index');
 var Loadgram = lib.Loadgram;
