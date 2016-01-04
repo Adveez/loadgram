@@ -1,25 +1,3 @@
-# Loadgram 
-
-UDP load balancer written in node.js.
-
-![](https://img.shields.io/badge/coverage-48%-orange.svg)
-
-## Notice
-
-This project is under development and should not be consider production ready. Early adopters and contributors are obviously welcome.
-
-## Features
-
-- Round robin load balancing strategy
-- Health check of the attached backend servers
-- Configurable timeout
-- A Web UI to report on the important metrics
-- A HTTP JSON API to report on the important metrics
-- Use a backend server as backup
-
-## Configuration file
-
-```json
 {
 	"global" : {
 		"loglevel" : "info" 
@@ -93,33 +71,3 @@ This project is under development and should not be consider production ready. E
 		}
 	]	
 }
-```
-
-## Run test
-
-Requirements:
-
-- development dependencies installed i.e `npm install`
-
-```
-npm test
-```
-
-## Run test coverage
-
-Requirements:
-
-- development dependencies installed i.e `npm install`
-- jscoverage utility installed (https://github.com/tj/node-jscoverage) 
-
-```
-npm run test-cov
-```
-
-Open coverage.html in your browser to see the result
-
-## License
-
-Copyright (c) 2015 Adveez
-
-This software is under the MIT license, see the license document in this repository for more information.
