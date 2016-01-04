@@ -120,6 +120,6 @@ Open coverage.html in your browser to see the result
 
 ## License
 
-Copyright (c) 2015 Adveez
+Copyright (c) 2015-today Adveez
 
 This software is under the MIT license, see the license document in this repository for more information.
